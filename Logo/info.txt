@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Rounded_Elegance
+font link: https://www.dafont.com/rounded-elegance.font
+font author: Genumano
+font author site: mailto:dcc700@gmail.com
+Slogan Font: Aleo-Light.otf
+
+icon designer: Ryan Spiering
+icon designer link: /Ryan-Spiering
+        
+{"bg":"#4D65F1","font":"#ffffff","icon":"#ffffff","slogan":"#ffffff"}
+      

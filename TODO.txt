@@ -1,0 +1,12 @@
+# 1. Adicionar seta que volta para cima -- COMPLETA --
+# 2. Adicionar animações -- COMPLETA --
+# 3. Adicionar funcionalidade aos links
+# 4. Adicionar os 3 ou 6 serviços
+# 5. Aumentar o padding do rodapé -- COMPLETA --
+# 6. Adicionar efeito hover aos links da navbar -- COMPLETA --
+# 7. Criar caixas de explicação de projetos
+# 8. Adicionar links dos projetos
+# 9. Melhorar / adicionar texto
+# 10. Fazer menu hamburguer com animação
+# 11. Fazer a animação das letras iniciais
+# Último. Refatorar o código
