@@ -10,89 +10,96 @@
 :root {
   font-size: 62.5%;
   --section-bg: #4b5bb1;
-  --gold: #E29E21;
+  --gold: #4c59a0;
   --light-blue: #577aa3;
   --color1: #5566c9
     /*#5268e7*/
   ;
-  --header-gradient: linear-gradient(45deg, var(--color1), var(--dark-blue))
+  --header-gradient: linear-gradient(45deg, var(--section-bg), #4c59a0)
 }
 
 /* ================= ANIMAÇÕES ========================= */
-@keyframes surge-top{
-  0%{
+@keyframes surge-top {
+  0% {
     opacity: 0;
     transform: translateY(-100px);
   }
-  100%{
+
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-@keyframes surge-bottom{
-  0%{
+@keyframes surge-bottom {
+  0% {
     opacity: 0;
     transform: translateY(100px);
   }
-  100%{
+
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-@keyframes surge-left{
-  0%{
+@keyframes surge-left {
+  0% {
     opacity: 0;
     transform: translateX(-100px);
   }
-  100%{
+
+  100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-@keyframes surge-right{
-  0%{
+@keyframes surge-right {
+  0% {
     opacity: 0;
     transform: translateX(100px);
   }
-  100%{
+
+  100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-@keyframes scale-surge{
-  0%{
+@keyframes scale-surge {
+  0% {
     opacity: 0;
     transform: scale(0);
   }
-  100%{
+
+  100% {
     opacity: 1;
     transform: scale(1);
   }
 }
 
-.surge-top{
+.surge-top {
   animation: surge-top 2s forwards;
 }
 
-.surge-bottom{
+.surge-bottom {
   animation: surge-bottom 2s forwards;
 }
 
-.surge-left{
+.surge-left {
   animation: surge-left 2s forwards;
 }
 
-.surge-right{
+.surge-right {
   animation: surge-right 2s forwards;
 }
 
-.scale-surge{
+.scale-surge {
   animation: scale-surge 1s forwards;
 }
+
+/* ======================================================== */
 
 body {
   color: white;
@@ -129,19 +136,27 @@ h2 {
   color: #283849;
 }
 
+h3 {
+  font-size: 2.2rem;
+}
+
+
 h4 {
-  color: white;
   font-size: 2rem;
 }
 
-.title--light{
+.title--light {
   color: #fff;
 }
 
 
-.title--dark{
+.title--dark {
   color: var(--section-bg)
 }
+
+
+
+
 
 ul {
   list-style: none;
@@ -175,6 +190,12 @@ nav ul {
 
 nav {
   justify-content: space-between;
+  position: relative;
+
+  border-bottom: 1px solid rgba(106, 143, 224, 0.171);
+  border-radius: 30%;
+  padding-bottom: 2rem;
+
 }
 
 nav ul {
@@ -237,7 +258,6 @@ header {
   gap: 1rem;
 }
 
-
 .emphasize {
   text-transform: uppercase;
 }
@@ -251,7 +271,7 @@ header {
 
 
 .description {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .section__heading {
@@ -261,6 +281,7 @@ header {
 
 .about-me {
   background-color: var(--section-bg);
+  background-image: var(--header-gradient);
   color: white;
   padding: 5rem 0;
 }
@@ -310,19 +331,28 @@ main {
   margin-top: 1rem;
 }
 
+.tech-stack__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tech-stack__box {
+  width: 100%;
+}
+
 .tech-stack {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 2rem;
-  background-color: #4256c91c;
-  padding: 2rem;
+  background-color: #c9c9c92a;
   border-radius: 10px;
   margin: 1rem 0;
 }
 
 .tech-stack li {
-  width: 8rem;
+  padding: 3rem;
   border-radius: 10px;
 }
 
@@ -333,6 +363,7 @@ main {
   flex-direction: column;
   align-items: stretch;
   background-color: var(--section-bg);
+  background-image: var(--header-gradient);
 }
 
 .projects h3 {
@@ -340,9 +371,11 @@ main {
 }
 
 .projects__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 2rem 0;
   flex: 1;
-  position: relative;
   color: white;
 }
 
@@ -358,6 +391,43 @@ main {
   align-items: center;
   gap: 1rem;
   padding: 2rem 0;
+}
+
+.services__container {
+  padding: 1rem 0;
+}
+
+.services__heading {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bolder;
+  padding-bottom: 5rem;
+}
+
+.services__list {
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services__item {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services__img {
+  border-radius: 50%;
+  border: 2px solid var(--section-bg);
+  padding: 2rem;
+}
+
+.services__img img {
+  width: 8rem;
 }
 
 
@@ -392,7 +462,6 @@ footer {
 .footer__container {
   display: flex;
   flex-direction: column;
-
   gap: 1rem;
 }
 
@@ -438,7 +507,7 @@ footer {
   justify-content: space-between;
 }
 
-.footer__email{
+.footer__email {
   color: white;
   text-decoration: underline;
 }
@@ -447,7 +516,7 @@ footer {
   width: 40%;
 }
 
-.back-to-top{
+.back-to-top {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
@@ -458,7 +527,7 @@ footer {
   border-radius: 50%;
 }
 
-.back-to-top::before{
+.back-to-top::before {
   content: "";
   width: 90%;
   height: 90%;
@@ -495,7 +564,7 @@ footer {
     position: relative;
   }
 
-  .nav__link::before{
+  .nav__link::before {
     content: '';
     width: 0;
     height: 100%;
@@ -505,12 +574,12 @@ footer {
     transition: width 500ms;
   }
 
-  .nav__link:hover:before{
+  .nav__link:hover:before {
     width: 100%;
   }
 
-  .header__container--presentation{
-    padding: 8rem 0;
+  .header__container--presentation {
+    padding: 7rem;
   }
 
   .about-me__text {
@@ -546,6 +615,14 @@ footer {
     gap: 2rem;
   }
 
+  .tech-stack__container {
+    flex-direction: row;
+  }
+
+  .tech-stack__box {
+    width: 49%;
+  }
+
   .projects__cards--container {
     display: flex;
     justify-content: space-between;
@@ -558,7 +635,16 @@ footer {
   .projects__cards--container li {
     flex-grow: 1;
   }
-  
+
+  .services__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .services__item {
+    width: 45%;
+  }
+
 
   .footer__container {
     display: flex;
@@ -567,7 +653,7 @@ footer {
     justify-content: space-between;
   }
 
-  .socials{
+  .socials {
     width: 100%;
     justify-content: space-between;
     align-items: stretch;
@@ -580,6 +666,6 @@ footer {
 
 }
 
-.hidden{
+.hidden {
   display: none;
 }

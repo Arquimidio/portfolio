@@ -9,4 +9,7 @@
 # 9. Melhorar / adicionar texto
 # 10. Fazer menu hamburguer com animação
 # 11. Fazer a animação das letras iniciais
+# 12. Colocar risco do Khan Academy embaixo das letras iniciais
+# 13. Preencher o atributo alt das imagens
+# 14. Adicionar gradientes aos backgrounds escuros
 # Último. Refatorar o código

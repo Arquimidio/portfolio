@@ -31,7 +31,7 @@
             Olá, eu sou <strong class="name">Gabriel</strong>, desenvolvedor web Full-Stack
           </h1>
           <!-- <p class="description">Aliando interatividade e beleza no front end com dinamismo no back end, construo sites adaptáveis, elegantes e eficientes</p> -->
-          <p class="description">Construo sites elegantes</p>
+          <p class="description">Construo sites <span id="adjectives">elegantes</span></p>
         </div>
       </div>
       <div class="know-more surge-bottom">
@@ -56,42 +56,29 @@
         </div>
       </div>
     </section>
-    <section class="services">
-      <div class="services__container container">
-        <ul>
-          <li>
-            <img src="" alt="">
-            <h3></h3>
-          </li>
-          <li>
-            <img src="" alt="">
-            <h3></h3>
-          </li>
-          <li>
-            <img src="" alt="">
-            <h3></h3>
-            <p></p>
-          </li>
-        </ul>
-      </div>
-    </section>
     <section>
       <div id="tech" class="container tech">
         <h3 class="section__heading title--dark">Tecnologias que domino</h3>
-        <h4 class="emphasize tech__title title--dark">Front end</h4>
-        <ul class="tech-stack">
-          <li class="tech__icon"><img src="./assets/images/tech/html.svg" alt=""></li>
-          <li class="tech__icon"><img src="./assets/images/tech/css.svg" alt=""></li>
-          <li class="tech__icon"><img src="./assets/images/tech/js.svg" alt=""></li>
-          <li class="tech__icon"><img src="./assets/images/tech/react.svg" alt=""></li>
-        </ul>
-        <h4 class="emphasize tech__title title--dark">Back end</h4>
-        <ul class="tech-stack">
-          <li class="tech__icon"><img src="./assets/images/tech/node.svg" alt=""></li>
-          <li class="tech__icon"><img src="./assets/images/tech/expressjs.svg" alt=""></li>
-          <li class="tech__icon"><img src="./assets/images/tech/mongoose.svg" alt=""></li>
-          <li class="tech__icon"><img src="./assets/images/tech/mongodb.svg" alt=""></li>
-        </ul>
+        <div class="tech-stack__container">
+          <div class="tech-stack__box">
+            <h4 class="tech__title title--dark">Front-end</h4>
+            <ul class="tech-stack">
+              <li class="tech__icon"><img src="./assets/images/tech/html.svg" alt=""></li>
+              <li class="tech__icon"><img src="./assets/images/tech/css.svg" alt=""></li>
+              <li class="tech__icon"><img src="./assets/images/tech/js.svg" alt=""></li>
+              <li class="tech__icon"><img src="./assets/images/tech/react.svg" alt=""></li>
+            </ul>
+          </div>
+          <div class="tech-stack__box">
+            <h4 class="tech__title title--dark">Back-end</h4>
+            <ul class="tech-stack">
+              <li class="tech__icon"><img src="./assets/images/tech/node.svg" alt=""></li>
+              <li class="tech__icon"><img src="./assets/images/tech/expressjs.svg" alt=""></li>
+              <li class="tech__icon"><img src="./assets/images/tech/mongoose.svg" alt=""></li>
+              <li class="tech__icon"><img src="./assets/images/tech/mongodb.svg" alt=""></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
     <!--=================ÁREA DE PROJETOS =====================-->
@@ -126,6 +113,41 @@
         </ul>
       </div>
     </section>
+    <!-- ==================== ÁREA DE SERVIÇOS =============================-->
+    <section class="services">
+      <div class="services__container container">
+        <h3 class="services__heading">Meus Serviços</h3>
+        <ul class="services__list">
+          <li class="services__item">
+            <div class="services__img"><img src="./assets/images/services/consult.svg" alt=""></div>
+            <h4>Consulta</h4>
+            <p>Na fase de consulta, são verificados todos os interesses do cliente com relação aos objetivos do website,
+              estrutura, mensagem a ser passada, direcionamento dos serviços, dentre outros</p>
+          </li>
+          <li class="services__item">
+            <div class="services__img"><img src="./assets/images/services/proposal.svg" alt=""></div>
+            <h4>Proposta</h4>
+            <p>Após a consulta, são avaliadas as possibilidades de criação do produto final para o cliente,
+              verificando-se a viabilidade do produto, forma de realização e prazo. Nessa fase, apresenta-se o contrato
+            </p>
+          </li>
+          <li class="services__item">
+            <div class="services__img"><img src="./assets/images/services/creation.svg" alt=""></div>
+            <h4>Criação</h4>
+            <p>Após o aceite da proposta, é iniciada a criação do website, sendo o cliente informado sobre o andamento
+              do projeto a cada mudança de fase, bem como sendo realizadas eventuais consultas</p>
+          </li>
+          <li class="services__item">
+            <div class="services__img"><img src="./assets/images/services/launch.svg" alt=""></div>
+            <h4>Lançamento</h4>
+            <p>Por fim, terminado o embelezamento, a estruturação e a otimização, bem como a criação das
+              funcionalidades, o site está pronto para ser disponibilizado
+              na web para o acesso dos clientes</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- ================ ÁREA DE CONTATO ===============-->
     <section id="contact">
       <div class="container contact">
         <h3 class="section__heading">Vamos nos conectar!</h3>
