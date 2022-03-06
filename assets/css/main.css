@@ -228,7 +228,7 @@ header {
 
 .header__container--presentation {
   width: 100%;
-  padding: 8rem 0;
+  padding: 15rem 0;
 }
 
 .header__btns {
@@ -507,6 +507,10 @@ footer {
 
   .nav__link:hover:before{
     width: 100%;
+  }
+
+  .header__container--presentation{
+    padding: 8rem 0;
   }
 
   .about-me__text {
