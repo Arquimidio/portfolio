@@ -91,8 +91,8 @@
             <img src="./assets/images/url-shortener.png" alt="">
             <div class="projects__card__text">
               <h4>URL Shortener</h4>
-              <p>Encurtador de URL Full-Stack totalmente responsivo com integração com DB</p>
-              <button class="btn btn--light">Ver Projeto</button>
+              <p>Encurtador de URL Full-Stack totalmente responsivo com integração com base de dados</p>
+              <button class="btn btn--light projects__btn">Ver Projeto</button>
             </div>
           </li>
           <li class="projects__card">
@@ -100,7 +100,7 @@
             <div class="projects__card__text">
               <h4>E-commerce page</h4>
               <p>Página totalmente responsiva de compra em e-commerce com função de carrinho</p>
-              <button class="btn btn--light">Ver Projeto</button>
+              <button class="btn btn--light projects__btn">Ver Projeto</button>
             </div>
           </li>
           <li class="projects__card">
@@ -108,7 +108,7 @@
             <div class="projects__card__text">
               <h4>My Library</h4>
               <p>Site responsivo de armazenamento e edição de leituras realizadas ou em andamento</p>
-              <button class="btn btn--light">Ver Projeto</button>
+              <button class="btn btn--light projects__btn">Ver Projeto</button>
             </div>
           </li>
         </ul>
@@ -117,7 +117,7 @@
     <!-- ==================== ÁREA DE SERVIÇOS =============================-->
     <section id="services" class="services">
       <div class="services__container container">
-        <h3 class="services__heading">Meus Serviços</h3>
+        <h3 class="section__heading center">Meus Serviços</h3>
         <ul class="services__list">
           <li class="services__item">
             <div class="services__img"><img src="./assets/images/services/consult.svg" alt=""></div>
@@ -152,7 +152,7 @@
     <section id="contact">
       <div class="container contact">
         <h3 class="section__heading">Vamos nos conectar!</h3>
-        <form action="">
+        <form action="" data-netlify="true">
           <div class="contact__information">
             <div class="contact__information--container">
               <label for="name">Nome</label>
@@ -179,6 +179,7 @@
           <li><a href="#about-me" class="footer__link">Sobre mim</a></li>
           <li><a href="#tech" class="footer__link">Tecnologias</a></li>
           <li><a href="#projects" class="footer__link">Projetos</a></li>
+          <li><a href="#services" class="footer__link">Serviços</a></li>
           <li><a href="#contact" class="footer__link">Contato</a></li>
         </ul>
       </div>
@@ -206,6 +207,16 @@
       </div>
     </div>
   </footer>
+  <section id="modal" class="modal">
+    <div class="modal__content container">
+      <div id="modal__close" class="modal__close">X</div>
+      <img src="" alt="Image" class="modal__img" id="modal__image">
+      <div class="modal__text">
+        <h2 id="modal__title">My project</h2>
+        <p id="modal__paragraph">Encurtador de URL Full-Stack totalmente responsivo com integração com base de dados</p>
+      </div>
+    </div>
+  </section>
   <a href="#top" class="back-to-top hidden">
     <img src="./assets/images/arrow-up.svg" alt="Arrow up icon">
   </a>
