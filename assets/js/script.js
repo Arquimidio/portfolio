@@ -14,5 +14,5 @@ class Scroll{
 }
 
 const scroll = new Scroll()
-const revealList = ['.tech__icon', '.projects__card']
+const revealList = ['.projects__card', '.services__item']
 revealList.forEach(element => ScrollReveal({ reset: true }).reveal(element, { delay: 100 }))

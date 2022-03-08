@@ -154,7 +154,7 @@ h4 {
   color: var(--section-bg)
 }
 
-
+/* ====== GAPS ======== */
 
 
 
@@ -352,7 +352,7 @@ main {
 }
 
 .tech-stack li {
-  padding: 3rem;
+  padding: 3%;
   border-radius: 10px;
 }
 
