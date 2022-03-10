@@ -1,6 +1,7 @@
 class Scroll{
     constructor(){
         this.toTopArrow = document.querySelector('.back-to-top')
+        this.revealList = ['.projects__card', '.services__item']
         window.addEventListener('scroll', this.showOrHideArrow.bind(this))
     }
 
@@ -45,9 +46,37 @@ class ProjectModal{
     }
 }
 
+class LateralMenu{
+    constructor(){
+        this.hamburguer = document.getElementById('hamburguer')
+        this.menu = document.getElementById('menu')
+        this.hamburguer.addEventListener('click', this.showMenu.bind(this))
+        this.hamburguerBars = document.getElementById('hamburguer__btn')
+        this.toggled = false
+        this.hideTimeout = false
+    }
+
+    showMenu(){
+        if(this.toggled){
+            this.hamburguerBars.classList.remove('open')
+            this.menu.style.transform = 'translateX(100%)'
+            this.hideTimeout = setTimeout(() => this.menu.style.display = 'none', 1000)
+        }else{
+            this.hamburguerBars.classList.add('open')
+            this.hamburguer.classList.add('hamburguer--fixed')
+            this.menu.style.display = 'flex'
+            if(this.hideTimeout){
+                clearTimeout(this.hideTimeout)
+            }
+            setTimeout(() => this.menu.style.transform = 'translateX(0)')
+        }
+        this.toggled = !this.toggled
+    }
+}
+
 const scroll = new Scroll()
-const revealList = ['.projects__card', '.services__item']
-revealList.forEach(element => ScrollReveal({ reset: true }).reveal(element, { delay: 100 }))
+const lateralMenu = new LateralMenu()
+scroll.revealList.forEach(element => ScrollReveal({ reset: true }).reveal(element, { delay: 100 }))
 
 const modal = new ProjectModal().initialize()
 

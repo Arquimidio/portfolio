@@ -12,4 +12,5 @@
 # 12. Colocar risco do Khan Academy embaixo das letras iniciais
 # 13. Preencher o atributo alt das imagens
 # 14. Adicionar gradientes aos backgrounds escuros
+# 15. Colocar nomes no campos do formulário -- COMPLETA --
 # Último. Refatorar o código
